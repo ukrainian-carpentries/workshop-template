@@ -39,7 +39,7 @@ For a workshop please delete the following block until the next dashed-line
 
 
 <div class="alert alert-danger">
-Це шаблон для сторінки семінару. Видаліть ці рядки і використайте його для налаштування свого семінару (інструкція англійською знаходяться
+Це шаблон для сторінки семінару. Видаліть ці рядки і використайте його для налаштування свого семінару (інструкція англійською знаходиться
 <a href="https://carpentries.github.io/workshop-template/customization/index.html">тут</a>).
 Якщо ви проводите цей семінар самостійно або ще не відправили запит на семінар, будь-ласка заповніть
 <a href="{{site.amy_site}}/forms/self-organised/">цю форму</a>
@@ -63,7 +63,7 @@ Check DC curriculum
 {% if site.carpentry == "dc" %}
 {% unless site.curriculum == "dc-astronomy" or site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-geospatial" or site.curriculum == "dc-image" or site.curriculum == "dc-socsci" %}
 <div class="alert alert-warning">
-Схоже, що ви налаштовуєте веб-сайт для навчальної програми Data Carpenterry, але ви не вказали тип навчальної програми у файлі <code>_config.yml</code> (поточне значення у <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", можливі значення: <code>dc-image</code>, <code>dc-astronomy</code>, <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). Після редагування цього файлу вам потрібно знову запустити <code>make serve</code> , щоб побачити відображені зміни.
+Схоже, що ви налаштовуєте веб-сайт для навчальної програми Data Carpentry, але ви не вказали тип навчальної програми у файлі <code>_config.yml</code> (поточне значення у <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", можливі значення: <code>dc-image</code>, <code>dc-astronomy</code>, <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). Після редагування цього файлу вам потрібно знову запустити <code>make serve</code> , щоб побачити відображені зміни.
 </div>
 {% endunless %}
 {% endif %}

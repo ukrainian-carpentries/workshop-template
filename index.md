@@ -39,18 +39,16 @@ For a workshop please delete the following block until the next dashed-line
 
 
 <div class="alert alert-danger">
-This is the workshop template. Delete these lines and use it to
-<a href="https://carpentries.github.io/workshop-template/customization/index.html">customize</a>
-your own website. If you are running a self-organized workshop or have not put
-in a workshop request yet, please also fill in
-<a href="{{site.amy_site}}/forms/self-organised/">this workshop request form</a>
-to let us know about your workshop and our administrator may contact you if we
-need any extra information.
-If this is a pilot workshop for a new lesson,
-set the `pilot` field to `true` in `_config.yml`.
-For workshops teaching a lesson in The Carpentries Incubator,
-remember to uncomment the `incubator_lesson_site`, `incubator_pre_survey`, and `incubator_post_survey`
-fields in `_config.yml`
+Це шаблон для сторінки семінару. Видаліть ці рядки і використайте його для налаштування свого семінару (інструкція англійською знаходяться
+<a href="https://carpentries.github.io/workshop-template/customization/index.html">тут</a>).
+Якщо ви проводите цей семінар самостійно або ще не відправили запит на семінар, будь-ласка заповніть
+<a href="{{site.amy_site}}/forms/self-organised/">цю форму</a>
+щоб повідомити нас про ваш семінар, і ми зв'яжемось з вами, якщо нам буде потрібна додаткова інформація.
+Якщо це перший семінар для нового уроку,
+вкажіть значення `true` в полі `pilot` у файлі `_config.yml`.
+Для семінарів, які викладають уроки з Carpentries Incubator,
+треба видалити коментарі з полей `incubator_lesson_site`, `incubator_pre_survey`, та `incubator_post_survey`
+у файлі `_config.yml`.
 </div>
 
 {% comment %}
@@ -65,19 +63,19 @@ Check DC curriculum
 {% if site.carpentry == "dc" %}
 {% unless site.curriculum == "dc-astronomy" or site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-geospatial" or site.curriculum == "dc-image" or site.curriculum == "dc-socsci" %}
 <div class="alert alert-warning">
-It looks like you are setting up a website for a Data Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>dc-image</code>, <code>dc-astronomy</code>, <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
+Схоже, що ви налаштовуєте веб-сайт для навчальної програми Data Carpenterry, але ви не вказали тип навчальної програми у файлі <code>_config.yml</code> (поточне значення у <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", можливі значення: <code>dc-image</code>, <code>dc-astronomy</code>, <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). Після редагування цього файлу вам потрібно знову запустити <code>make serve</code> , щоб побачити відображені зміни.
 </div>
 {% endunless %}
 {% endif %}
 
 {% comment %}
-Check SWC curriculum
+Перевірте навчальний план SWC
 {% endcomment %}
 
 {% if site.carpentry == "swc" %}
 {% unless site.curriculum == "swc-inflammation" or site.curriculum == "swc-gapminder" %}
 <div class="alert alert-warning">
-It looks like you are setting up a website for a Software Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, or <code>swc-gapminder</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
+Схоже, ви налаштовуєте веб-сайт для навчального плану Software Carpentry, але не вказали тип навчального плану у файлі <code>_config.yml</code> (поточне значення у <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, or <code>swc-gapminder</code>). Після редагування цього файлу вам потрібно знову запустити <code>make serve</code>, щоб побачити відображені зміни.
 </div>
 {% endunless %}
 {% endif %}
@@ -85,14 +83,10 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 {% comment %}
 EVENTBRITE
 
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
+Цей блок містить віджет реєстрації Eventbrite, якщо в заголовку встановлено «eventbrite». Ви можете видалити його, якщо ви не використовуєте Eventbrite, або залишити його, оскільки воно не відображатиметься, якщо поле 'eventbrite' у заголовку не встановлено.
 {% endcomment %}
 {% if page.eventbrite %}
-<strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
+<strong>Деякі блокувальники реклами блокують вікно реєстрації. Якщо ви не бачите поле реєстрації нижче, перевірте налаштування блокувальника реклами.</strong>
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
@@ -106,22 +100,19 @@ displayed if the 'eventbrite' field in the header is not set.
 <h2 id="general">General Information</h2>
 
 {% comment %}
-INTRODUCTION
+ВСТУП
 
-Edit the general explanatory paragraph below if you want to change
-the pitch.
+Відредагуйте загальний пояснювальний абзац нижче, якщо ви хочете змінити "pitch"
 {% endcomment %}
 
 <p>
-<strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the <a
-href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
-<a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
-helpers, and supporters who share a mission to teach foundational computational and data science
-skills to researchers.
+<strong><a href="https://carpentries.org">Проект Carpentries</a></strong> містить в собі<a
+href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, та
+<a href="{{site.lc_site}}">Library Carpentry</a> спільноти інструкторів, тренерів, супроводжувачів, помічників і прихильників, які мають спільну місію — навчати дослідників основним навичкам обчислення та науки про дані.
 <p align="center">
   <em>
-  <strong>Want to learn more and stay engaged with The Carpentries?</strong> Carpentries Clippings is The Carpentries' biweekly newsletter, where we share community news, community job postings, and more.
-Sign up to receive future editions and read our full archive: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
+  <strong>Хочете дізнатися більше та підтримувати співпрацю з Carpentries?</strong> Carpentries Clippings — це двотижневий інформаційний вісник The Carpentries, де ми ділимося новинами спільноти, оголошеннями про вакансії тощо.
+Зареєструйтеся, щоб отримувати наступні видання та читати наш повний архів: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
   </em>
 </p>
 {% if site.carpentry == "swc" %}
@@ -133,14 +124,13 @@ Sign up to receive future editions and read our full archive: <a href="https://c
 {% endif %}
 
 {% if site.pilot %}
-This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
+Це пілотний семінар, де проходить тестування уроку, який ще розробляється. Автори уроку будуть вдячні за будь-які відгуки, які ви можете надати їм щодо змісту уроку та пропозиції щодо його подальшого вдосконалення.
 {% endif %}
 
 {% comment %}
-AUDIENCE
+АУДИТОРІЯ
 
-Explain who your audience is.  (In particular, tell readers if the
-workshop is only open to people from a particular institution.
+Поясніть, хто ваша аудиторія.  (Зокрема, повідомте аудиторії, чи семінар відкритий лише для людей з певної установи.
 {% endcomment %}
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
@@ -151,12 +141,10 @@ workshop is only open to people from a particular institution.
 {% endif %}
 
 {% comment %}
-LOCATION
+МІСЦЕЗНАХОДЖЕННЯ
 
-This block displays the address and links to maps showing directions
-if the latitude and longitude of the workshop have been set.  You
-can use https://www.latlong.net/ to find the lat/long of an
-address.
+У цьому блоці відображається адреса та посилання на карти, що показують напрямки, якщо було встановлено широту та довготу семінару. Ви можете використовувати https://www.latlong.net/, щоб знайти широту/довготу
+адресу.
 {% endcomment %}
 {% assign begin_address = page.address | slice: 0, 4 | downcase  %}
 {% if page.address == "online" %}
@@ -168,31 +156,30 @@ address.
 {% endif %}
 {% if page.latitude and page.longitude and online == "false" %}
 <p id="where">
-  <strong>Where:</strong>
+  <strong>Де:</strong>
   {{page.address}}.
-  Get directions with
+  Отримати напрямок за допомогою
   <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
-  or
+  або
   <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
 </p>
 {% elsif online == "true_public" %}
 <p id="where">
-  <strong>Where:</strong>
-  online at <a href="{{page.address}}">{{page.address}}</a>.
-  If you need a password or other information to access the training,
-  the instructor will pass it on to you before the workshop.
+  <strong>Де:</strong>
+  онлайн за адресою <a href="{{page.address}}">{{page.address}}</a>.
+  Якщо вам потрібен пароль або інша інформація для доступу до тренінгу, інструктор дасть його вам перед семінаром.
 </p>
 {% elsif online == "true_private" %}
 <p id="where">
-  <strong>Where:</strong> This training will take place online.
-  The instructors will provide you with the information you will need to connect to this meeting.
+  <strong>Де:</strong> Цей семінар відбуватиметься онлайн.
+  Інструктори нададуть вам інформацію, яка вам знадобиться для того щоб приєднатися до цієї зустрічі.
 </p>
 {% endif %}
 
 {% comment %}
-DATE
+ДАТА
 
-This block displays the date and links to Google Calendar.
+Цей блок відображає дату та посилання на Google Calendar.
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
@@ -203,69 +190,60 @@ This block displays the date and links to Google Calendar.
 {% endif %}
 
 {% comment %}
-SPECIAL REQUIREMENTS
+ОСОБЛИВІ ВИМОГИ
 
-Modify the block below if there are any special requirements.
+Змініть блок нижче, якщо є якійсь особливі вимоги.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong>
+  <strong>Вимоги:</strong>
   {% if online == "false" %}
-    Participants must bring a laptop with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+    Слухачі повинні мати з собою ноутбук з операційною системою Mac, Linux або Windows (не планшет, Chromebook тощо), на якому вони мають права адміністратора.
   {% else %}
-    Participants must have access to a computer with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+    Слухачі повинні мати доступ до комп’ютера з операційною системою Mac, Linux або Windows (не планшет, Chromebook тощо), на якому вони мають права адміністратора.
   {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  У них має бути встановлено декілька спеціальних програмних пакетів (перелічених тут <a href="#setup">below</a>).
 </p>
 
 {% comment %}
-ACCESSIBILITY
+ДОСТУПНІСТЬ
 
-Modify the block below if there are any barriers to accessibility or
-special instructions.
+Змініть блок нижче, якщо є будь-які перешкоди для доступності або спеціальні інструкції.
 {% endcomment %}
 <p id="accessibility">
-  <strong>Accessibility:</strong>
+  <strong>Доступність:</strong>
 {% if online == "false" %}
-  We are committed to making this workshop
-  accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
+  Ми прагнемо зробити цей семінар зручним для всіх. Для семінарів у фізичному місці організатори семінарів переконалися, що:
 </p>
 <ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
+  <li>Приміщення пристосоване для інвалідних візків/самокатів.</li>
+  <li>Є доступні вбиральні.</li>
 </ul>
 <p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  get in touch (using contact details below) and we will
-  attempt to provide them.
+  Матеріали будуть надані до початку семінару, а матеріали великим шрифтом для видачі будуть доступні за потреби, попередньо повідомивши про це організаторів. Якщо ми можемо допомогти вам полегшити навчання (наприклад, сурдоперекладачі, приміщення для лактації), будь ласка, зв'яжіться з нами (використовуючи контактні дані нижче), і ми спробуємо їх надати.
 </p>
 {% else %}
-  We are dedicated to providing a positive and accessible learning environment for all. 
-  We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
-  However, we do want to help create an inclusive, accessible experience for all participants. 
-  We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
-  To request an accommodation for this workshop, please fill out the 
-  <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
-  If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
+  Ми прагнемо створити позитивне та доступне навчальне середовище для всіх.
+  Ми не вимагаємо від учасників надавати документи про інвалідність або розкривати будь-яку непотрібну особисту інформацію.
+  Однак ми хочемо допомогти створити інклюзивний, доступний досвід для всіх учасників.
+  Ми заохочуємо вас поділитися будь-якою інформацією, яка може бути корисною для того, щоб зробити ваш досвід в Carpentries більш доступним.
+  Щоб запросити житло для цього семінару, будь ласка, заповніть
+  <a href="https://carpentries.typeform.com/to/B2OSYaD0">форму запиту на проживання</a>.
+  Якщо у вас є запитання або вам потрібна допомога з реєстрацією на житло, <a href="mailto:team@carpentries.org">напишіть нам електронною поштою</a>.
 </p>
 {% endif %}
 
 {% comment %}
-CONTACT EMAIL ADDRESS
+КОНТАКТНА АДРЕСА ЕЛЕКТРОННОЇ ПОШТИ
 
-Display the contact email address set in the configuration file.
+Відобразити контактну адресу електронної пошти, які вказана у файлі конфігурації.
 {% endcomment %}
 <p id="contact">
-  <strong>Contact:</strong>
-  Please email
+  <strong>Контакт:</strong>
+  Будь ласка, напишіть
   {% if page.email %}
   {% for email in page.email %}
   {% if forloop.last and page.email.size > 1 %}
-  or
+  або
   {% else %}
   {% unless forloop.first %}
   ,
@@ -280,25 +258,22 @@ Display the contact email address set in the configuration file.
 </p>
 
 <p id="roles">
-  <strong>Roles:</strong>
-  To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
+  <strong>Ролі:</strong>
+  Щоб дізнатися більше про ролі на семінарі (хто що робитиме), зверніться до нашої платформи Workshop FAQ<a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop"> </a>.
 </p>
 
 {% comment %}
-WHO CAN ATTEND?
+ХТО МОЖЕ БРАТИ УЧАСТЬ?
 
-If you would like to specify who can attend the workshop,
-you can use the section below.
+Якщо ви хочете вказати, хто може відвідати семінар, ви можете скористатися розділом нижче.
 
-Move the 'endcomment' tag above the beginning of the following
-<p> tag to make this section visible.
+Перемістіть тег 'endcomment' над початком наступного
+<p> тегу, щоб зробити цей розділ видимим.
 
-Edit the text to match who can attend the workshop. For instance:
-- This workshop is open to affiliates to ABC university.
-- This workshop is open to the public.
-- If you are interested in attending this workshop, contact me@example.com
-  for more information
+Відредагуйте текст відповідно до того, хто може відвідувати семінар. Наприклад:
+- Цей семінар відкритий для осіб у партнерських выдносинах з університетом ABC.
+- Цей семінар відкритий для громадськості.
+- Якщо ви зацікавлені в відвідуванні цього семінару, напишіть на me@example.com для отримання подальшої інформації
 
 <p id="who-can-attend">
     <strong>Who can attend?:</strong>

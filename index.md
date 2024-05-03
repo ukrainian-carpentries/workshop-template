@@ -277,100 +277,84 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 
 <p id="who-can-attend">
     <strong>Who can attend?:</strong>
-    This workshop is open to ....
+    Цей семінар відкритий для ....
 </p>
 {% endcomment %}
 
 <hr/>
 
 {% comment%}
-CODE OF CONDUCT
+КОДЕКС ПОВЕДІНКИ
 {% endcomment %}
-<h2 id="code-of-conduct">Code of Conduct</h2>
+<h2 id="code-of-conduct">Кодекс поведінки</h2>
 
 <p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+Кожен, хто бере участь у діяльності Carpentries, зобов'язаний дотримуватися <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Кодексу поведінки</a>. У цьому документі також описано, як повідомити про інцидент, якщо це необхідно.
 </p>
 
 <p class="text-center">
   <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
-    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+    <button type="button" class="btn btn-info">Повідомити про інцидент, пов'язаний із кодексом поведінки</button>
   </a>
 </p>
 <hr/>
 
 
 {% comment %}
-Collaborative Notes
+Нотатки для співпраці
 
-If you want to use an Etherpad, go to
+Якщо ви хочете використовувати Etherpad, перейдіть до
 
 https://pad.carpentries.org/YYYY-MM-DD-site
 
-where 'YYYY-MM-DD-site' is the identifier for your workshop,
-e.g., '2015-06-10-esu'.
+де 'YYYY-MM-DD-site' є ідентифікатором вашого семінару,
+Наприклад, '2015-06-10-esu'.
 
-Note we also have a CodiMD (the open-source version of HackMD)
-available at https://codimd.carpentries.org
+Зверніть увагу, що у нас також є CodiMD (версія HackMD з відкритим вихідним кодом), доступна за адресою https://codimd.carpentries.org
 {% endcomment %}
 {% if page.collaborative_notes %}
-<h2 id="collaborative_notes">Collaborative Notes</h2>
+<h2 id="collaborative_notes">Нотатки про співпрацю</h2>
 
 <p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+Ми використовуватимемо цей <a href="{{ page.collaborative_notes }}">спільний документ</a> для спілкування в чаті, створення нотаток і обміну URL-адресами та фрагментами коду.
 </p>
 <hr/>
 {% endif %}
 
 
 {% comment %}
-SURVEYS - DO NOT EDIT SURVEY LINKS
+ОПИТУВАННЯ - НЕ РЕДАГУЙТЕ ПОСИЛАННЯ НА ОПИТУВАННЯ
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
+<p>Будь ласка, обов'язково заповніть ці опитування до та після семінару.</p>
 {% if site.carpentry == "incubator" %}
-<p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
+<p><a href="{{ site.incubator_pre_survey }}">Опитування перед семінаром</a></p>
+<p><a href="{{ site.incubator_post_survey }}">Опитування після семінару</a></p>
 {% elsif site.incubator_pre_survey or site.incubator_post_survey %}
 <div class="alert alert-danger">
-WARNING: you have defined custom pre- and/or post-survey links for
-a workshop not configured for The Carpentries Incubator
-(the value of `curriculum` is not set to `incubator` in `_config.yml`).
-Please comment out the `incubator_pre_survey` and `incubator_post_survey` fields
-in `_config.yml` or, if this workshop is teaching a lesson in the Incubator,
-change the value of `carpentry` to `incubator`.
+УВАГА: ви визначили власні посилання до та/або після опитування для семінару, який не налаштований для The Carpentries Incubator (значення 'curriculum' не встановлено на 'incubator' у '_config.yml'). Будь ласка, закоментуйте поля «incubator_pre_survey» та «incubator_post_survey» у «_config.yml» або, якщо цей семінар проводить урок в Incubator, змініть значення «carpentry» на incubator.
 </div>
 {% else %}
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Опитування перед семінаром</a></p>
+<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Опитування після семінару</a></p>
 {% endif %}
 
 <hr/>
 
 
 {% comment %}
-SCHEDULE
+РОЗКЛАД
 
-Show the workshop's schedule.
+Покажіть розклад семінару.
 
-Small changes to the schedule can be made by modifying the
-`schedule.html` found in the `_includes` folder for your
-workshop type (`swc`, `lc`, or `dc`). Edit the items and
-times in the table to match your plans. You may also want to
-change 'Day 1' and 'Day 2' to be actual dates or days of the
-week.
+Невеликі зміни в розклад можна внести, змінивши «schedule.html», який знаходиться в папці «_includes» для вашого типу семінару («swc», «lc» або «dc»). Відредагуйте пункти та час у таблиці відповідно до своїх планів. Ви також можете змінити поля "День 1" і "День 2" на фактичні дати або дні тижня.
 
-For larger changes, a blank template for a 4-day workshop
-(useful for online teaching for instance) can be found in
-`_includes/custom-schedule.html`. Add the times, and what
-you will be teaching to this file. You may also want to add
-rows to the table if you wish to break down the schedule
-further. To use this custom schedule here, replace the block
-of code below the Schedule `<h2>` header below with
-`{% include custom-schedule.html %}`.
-{% endcomment %}
+  Для більших змін порожній шаблон для 4-денного семінару
+  (корисний, наприклад, для онлайн-викладання) можна знайти в розділі
+  `_includes/custom-schedule.html`. Додайте до цього файлу час і те, чого ви будете навчати. Ви також можете додати рядки до таблиці, якщо хочете розбити розклад далі. Щоб використовувати цей користувацький розклад тут, замініть блок коду під заголовком Розклад`<h2>` нижче на `{% include custom-schedule.html %}`.
+  {% endcomment %}
 
-<h2 id="schedule">Schedule</h2>
+<h2 id="schedule">Розклад</h2>
 
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
@@ -379,39 +363,34 @@ of code below the Schedule `<h2>` header below with
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
-This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
-Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
+Цей семінар проводить урок у [The Carpentries Incubator](https://carpentries-incubator.org/).
+Будь ласка, перевірте [домашню сторінку уроку]({{ site.incubator_lesson_site }}) щоб отримати список розділів уроку та приблизний час.
 {% endif %}
 
 {% comment %}
-Edit/replace the text above if you want to include a schedule table.
-See the contents of the _includes/custom-schedule.html file for an example of
-how one of these schedule tables is constructed.
+Відредагуйте або замініть текст вище, якщо ви хочете додати таблицю розкладу.
+Перегляньте вміст файлу _includes/custom-schedule.html для прикладу побудови однієї з цих таблиць розкладу.
 {% endcomment %}
 
 {% if site.pilot %}
-The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please [contact the workshop organisers](#contact) if you would like more information about the planned schedule.
+Урок, який викладається на цьому семінарі, є пілотним, і точний розклад ще не встановлений. Семінар містиме регулярні перерви. Будь ласка, [зв'яжіться з організаторами семінару](#contact), якщо ви хочете отримати більше інформації про запланований розклад.
 {% endif %}
 
 <hr/>
 
 
 {% comment %}
-SETUP
+НАЛАШТУВАННЯ
 
-Delete irrelevant sections from the setup instructions.  Each
-section is inside a 'div' without any classes to make the beginning
-and end easier to find.
+Видаліть недоречні розділи з інструкцій налаштування.  Кожен розділ знаходиться всередині 'div' без будь-яких класів, щоб полегшити пошук початку і кінця.
 
-This is the other place where people frequently make mistakes, so
-please preview your site before committing, and make sure to run
-'tools/check' as well.
+Це ще одне місце, де люди часто роблять помилки, тому, будь ласка, перегляньте свій сайт перед тим, як зробити фіксацію, і переконайтеся, що ви також запустили 'інструменти/перевірку'.
 {% endcomment %}
 
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
+  Для участі в
   {% if site.carpentry == "swc" %}
   Software Carpentry
   {% elsif site.carpentry == "dc" %}
@@ -419,33 +398,30 @@ please preview your site before committing, and make sure to run
   {% elsif site.carpentry == "lc" %}
   Library Carpentry
   {% endif %}
-  workshop,
-  you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
+  семінарах,
+  вам знадобиться доступ до програмного забезпечення, як описано нижче.
+  Крім того, вам знадобиться сучасний веб-браузер.
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  Ми ведемо список типових проблем, які виникають під час встановлення, як довідник для інструкторів, який може бути корисним на
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">вікі-сторінці Проблеми конфігурації та рішення</a>.
 </p>
 
 {% comment %}
-For online workshops, the section below provides:
-- installation instructions for the Zoom client
-- recommendations for setting up Learners' workspace so they can follow along
-  the instructions and the videoconferencing
+Для онлайн-семінарів у розділі нижче надано:
+- інструкцію по встановленню клієнта Zoom
+- рекомендації щодо облаштування робочого простору учнів, щоб вони могли слідувати інструкціям та відеоконференціям
 
-If you do not use Zoom for your online workshop, edit the file
+Якщо ви не використовуєте Zoom для свого онлайн-семінару, відредагуйте файл 
 `_includes/install_instructions/videoconferencing.html`
-to include the relevant installation instructions.
+, щоб додати відповідні інструкції зі встановлення.
 {% endcomment %}
 {% if online != "false" %}
 {% include install_instructions/videoconferencing.html %}
 {% endif %}
 
 {% comment %}
-These are the installation instructions for the tools used
-during the workshop.
+Це інструкція з встановлення інструментів, які використовуються під час семінару.
 {% endcomment %}
 
 {% if site.carpentry == "swc" %}
@@ -455,7 +431,6 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
+Будь ласка, перевірте сторінку "Налаштування"
+[на сайті уроку]({{ site.incubator_lesson_site }}), щоб отримати інструкції, яких слід дотримуватися, щоб отримати програмне забезпечення та дані, які вам знадобляться для проходження уроку.
 {% endif %}

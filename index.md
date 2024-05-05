@@ -128,9 +128,9 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 {% endif %}
 
 {% comment %}
-АУДИТОРІЯ
+ЦІЛЬОВА АУДИТОРІЯ
 
-Поясніть, хто ваша аудиторія.  (Зокрема, повідомте аудиторії, чи семінар відкритий лише для людей з певної установи.
+Поясніть, хто ваша аудиторія.  (Зокрема, повідомте аудиторії, чи семінар відкритий лише для людей з певної установи).
 {% endcomment %}
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
@@ -233,7 +233,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 {% endif %}
 
 {% comment %}
-КОНТАКТНА АДРЕСА ЕЛЕКТРОННОЇ ПОШТИ
+АДРЕСА ЕЛЕКТРОННОЇ ПОШТИ ДЛЯ КОНТАКТІВ
 
 Відобразити контактну адресу електронної пошти, які вказана у файлі конфігурації.
 {% endcomment %}
@@ -259,7 +259,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 
 <p id="roles">
   <strong>Ролі:</strong>
-  Щоб дізнатися більше про ролі на семінарі (хто що робитиме), зверніться до нашої платформи Workshop FAQ<a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop"> </a>.
+  Щоб дізнатися більше про ролі на семінарі (хто що робитиме), зверніться до Workshop FAQ<a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop"> </a>.
 </p>
 
 {% comment %}
@@ -271,7 +271,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 <p> тегу, щоб зробити цей розділ видимим.
 
 Відредагуйте текст відповідно до того, хто може відвідувати семінар. Наприклад:
-- Цей семінар відкритий для осіб у партнерських выдносинах з університетом ABC.
+- Цей семінар відкритий для осіб у партнерських відносинах з університетом ABC.
 - Цей семінар відкритий для громадськості.
 - Якщо ви зацікавлені в відвідуванні цього семінару, напишіть на me@example.com для отримання подальшої інформації
 

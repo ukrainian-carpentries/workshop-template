@@ -1,7 +1,7 @@
 {% comment %}
 
-Remove the third paragraph if the workshop will teach Python
-using something other than the Jupyter Notebook. Details at
+Видаліть третій абзац, якщо семінар буде навчати Python 
+за допомогою чогось іншого, ніж Jupyter Notebook. Подробиці на
 
 https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility
 {% endcomment %}
@@ -9,33 +9,35 @@ https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatib
   <h3>Python</h3>
 
   <p>
-    <a href="https://python.org">Python</a> is a popular language for
-    research computing, and great for general-purpose programming as
-    well.  Installing all of its research packages individually can be
-    a bit difficult, so we recommend
+    <a href="https://python.org">Python</a> це популярна мова для 
+    дослідницьких обчислень, яка також чудово підходить для загального
+    програмування. Встановлення всіх дослідницьких пакетів 
+    окремо може бути дещо складним, тому ми рекомендуємо
     <a href="https://www.anaconda.com/products/individual">Anaconda</a>,
-    an all-in-one installer.
+    інсталятор "все в одному".
   </p>
 
   <p>
-    Regardless of how you choose to install it,
-    <strong>please make sure you install Python version 3.x</strong>
-    (e.g., 3.6 is fine).
+    Незалежно від того, як ви вирішите його встановити,
+    <strong>переконайтеся, що ви встановили Python версії 3.x</strong>
+    (наприклад, 3.6 підійде).
   </p>
 
   {% comment %}
-  Please remove or comment out this paragraph using
-  <!-- and --> or  {% comment %} and {% endcomment %}
-  if you do not plan to use Jupyter Notebook environment.
+  Будь ласка, видаліть або закоментуйте цей абзац за допомогою
+  <!-- and --> або {% comment %} і {% endcomment %}
+  якщо ви не плануєте використовувати середовище Jupyter Notebook.
   {% endcomment %}
   <p>
-    We will teach Python using the <a href="https://jupyter.org/">Jupyter Notebook</a>,
-    a programming environment that runs in a web browser (Jupyter Notebook will be installed by Anaconda). For this to work you will need a reasonably
-    up-to-date browser. The current versions of the Chrome, Safari and
-    Firefox browsers are all
-    <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility">supported</a>
-    (some older browsers, including Internet Explorer version 9
-    and below, are not).
+    Ми будемо вивчати Python за допомогою 
+    <a href="https://jupyter.org/">Jupyter Notebook</a>,
+    що є середовищем програмування, яке працює у веб-браузері 
+    (Jupyter Notebook буде встановлено за допомогою Anaconda). 
+    Для того, щоб це працювало, вам знадобиться досить сучасний браузер.
+    <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility">Підтримуються</a>
+    поточні версії браузерів Chrome, Safari та Firefox 
+    (деякі старіші браузери, зокрема Internet Explorer версії 9 
+    і старші, не підтримуються).
   </p>
 
   <div>
@@ -48,11 +50,17 @@ https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatib
     <div class="tab-content">
       <article role="tabpanel" class="tab-pane active" id="python-windows">
         <ol>
-          <li>Open <a href="https://www.anaconda.com/products/individual#download-section">https://www.anaconda.com/products/individual#download-section</a> with your web browser.</li>
-          <li>Download the Anaconda for Windows installer with Python 3. (If you are not sure which version to choose, you probably want the 64-bit Graphical Installer <em>Anaconda3-...-Windows-x86_64.exe</em>)</li>
-          <li>Install Python 3 by running the Anaconda Installer, using all of the defaults for installation <em>except</em> make sure to check <strong>Add Anaconda to my PATH environment variable</strong>.</li>
+          <li>Відкрийте <a href="https://www.anaconda.com/products/individual#download-section">https://www.anaconda.com/products/individual#download-section</a> 
+            за допомогою вашого веб-браузера.</li>
+          <li>Завантажте інсталятор Anaconda для Windows з Python 3. 
+            (Якщо ви не впевнені, яку версію вибрати, вам, ймовірно, потрібен 64-розрядний графічний 
+            інсталятор <em>Anaconda3-...-Windows-x86_64.exe</em>)</li>
+          <li>Завантажте Python 3, запустивши інсталятор Anaconda, використовуючи всі значення за 
+            замовчуванням для встановлення. Тільки <em>не забудьте</em> позначити пункт 
+            <strong>Add Anaconda to my PATH environment variable 
+              (Додати Anaconda до моєї змінної середовища PATH)</strong>.</li>
         </ol>
-        <h4>Video Tutorial</h4>
+        <h4>Відео-інструкція</h4>
         <div class="yt-wrapper2">
         <div class="yt-wrapper">
         <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/xxQ0mzZ8UvA?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0" class="yt-frame" allowfullscreen></iframe>
@@ -61,11 +69,12 @@ https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatib
       </article>
       <article role="tabpanel" class="tab-pane" id="python-macos">
         <ol>
-          <li>Open <a href="https://www.anaconda.com/products/individual#download-section">https://www.anaconda.com/products/individual#download-section</a> with your web browser.</li>
-          <li>Download the Anaconda Installer with Python 3 for macOS (you can either use the Graphical or the Command Line Installer).</li>
-          <li>Install Python 3 by running the Anaconda Installer using all of the defaults for installation.</li>
+          <li>Відкрийте <a href="https://www.anaconda.com/products/individual#download-section">https://www.anaconda.com/products/individual#download-section</a> 
+            за допомогою вашого веб-браузера.</li>
+          <li>Завантажте інсталятор Anaconda з Python 3 для macOS (ви можете використовувати графічний або інсталятор командного рядка).</li>
+          <li>Встановіть Python 3, запустивши інсталятор Anaconda, використовуючи всі значення за замовчуванням для встановлення.</li>
         </ol>
-        <h4>Video Tutorial</h4>
+        <h4>Відео-інструкція</h4>
         <div class="yt-wrapper2">
         <div class="yt-wrapper">
         <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/TcSAln46u9U?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0" class="yt-frame" allowfullscreen></iframe>
@@ -74,37 +83,37 @@ https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatib
       </article>
       <article role="tabpanel" class="tab-pane" id="python-linux">
         <ol>
-          <li>Open <a href="https://www.anaconda.com/products/individual#download-section">https://www.anaconda.com/products/individual#download-section</a> with your web browser.</li>
-          <li>Download the Anaconda Installer with Python 3 for Linux.<br>
-            (The installation requires using the shell. If you aren't
-            comfortable doing the installation yourself
-            stop here and request help at the workshop.)
+          <li>Відкрийте <a href="https://www.anaconda.com/products/individual#download-section">https://www.anaconda.com/products/individual#download-section</a> 
+            за допомогою вашого веб-браузера.</li>
+          <li>Завантажте інсталятор Anaconda з Python 3 для Linux.<br>
+            (Для встановлення потрібно використовувати оболонку. Якщо вам незручно виконувати 
+            установку самостійно, зупиніться тут і попросіть допомоги на семінарі.)
           </li>
           <li>
-            Open a terminal window and navigate to the directory where
-            the executable is downloaded (e.g., `cd ~/Downloads`).
+            Відкрийте вікно терміналу та перейдіть до каталогу, куди завантажено виконуваний 
+            файл (наприклад, 'cd ~/Downloads').
           </li>
           <li>
-            Type <pre>bash Anaconda3-</pre> and then press
-            <kbd>Tab</kbd> to autocomplete the full file name. The name of
-            file you just downloaded should appear.
+            Введіть <pre>bash Anaconda3-</pre> і натисніть
+            <kbd>Tab</kbd> , щоб автоматично завершити повне ім'я файлу. Має з'явитися 
+            ім'я файлу, який ви щойно завантажили.
           </li>
           <li>
-            Press <kbd>Enter</kbd>
-            (or <kbd>Return</kbd> depending on your keyboard).
-            You will follow the text-only prompts.
-            To move through the text, press <kbd>Spacebar</kbd>.
-            Type <code>yes</code> and press enter to approve the license.
-            Press <kbd>Enter</kbd> (or <kbd>Return</kbd>)
-            to approve the default location
-            for the files.
-            Type <code>yes</code> and press
-            <kbd>Enter</kbd> (or <kbd>Return</kbd>)
-            to prepend Anaconda to your <code>PATH</code>
-            (this makes the Anaconda distribution the default Python).
+            Натисніть <kbd>Enter</kbd>
+            (або <kbd>Return</kbd> залежить від клавіатури).
+            Ви будете слідувати текстовим підказкам. 
+            Щоб переміщатися по тексту, натисніть <kbd>Spacebar</kbd>.
+            Введіть <code>yes</code> і натисніть клавішу Enter, 
+            щоб схвалити ліцензію.
+            Натисніть <kbd>Enter</kbd> (або <kbd>Return</kbd>), щоб 
+            затвердити розташування файлів за замовчуванням.
+            Введіть <code>yes</code> і натисніть
+            <kbd>Enter</kbd> (або <kbd>Return</kbd>),
+            щоб додати Anaconda до вашого <code>PATH</code>
+            (це робить розподіл Anaconda типовим Python).
           </li>
           <li>
-            Close the terminal window.
+            Закрийте вікно терміналу.
           </li>
         </ol>
       </article>

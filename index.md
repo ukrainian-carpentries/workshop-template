@@ -106,13 +106,13 @@ EVENTBRITE
 {% endcomment %}
 
 <p>
-<strong><a href="https://carpentries.org">Проект Carpentries</a></strong> містить в собі<a
+<strong><a href="https://carpentries.org">Проект Carpentries</a></strong> містить в собі <a
 href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, та
 <a href="{{site.lc_site}}">Library Carpentry</a> спільноти інструкторів, тренерів, супроводжувачів, помічників і прихильників, які мають спільну місію — навчати дослідників основним навичкам обчислення та науки про дані.
 <p align="center">
   <em>
   <strong>Хочете дізнатися більше та підтримувати співпрацю з Carpentries?</strong> Carpentries Clippings — це двотижневий інформаційний вісник The Carpentries, де ми ділимося новинами спільноти, оголошеннями про вакансії тощо.
-Зареєструйтеся, щоб отримувати наступні видання та читати наш повний архів: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
+  Зареєструйтеся, щоб отримувати наступні видання та читати наш повний архів: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
   </em>
 </p>
 {% if site.carpentry == "swc" %}
@@ -183,7 +183,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
-  <strong>When:</strong>
+  <strong>Де:</strong>
   {{page.humandate}}.
   {% include workshop_calendar.html %}
 </p>
@@ -201,7 +201,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
   {% else %}
     Слухачі повинні мати доступ до комп’ютера з операційною системою Mac, Linux або Windows (не планшет, Chromebook тощо), на якому вони мають права адміністратора.
   {% endif %}
-  У них має бути встановлено декілька спеціальних програмних пакетів (перелічених тут <a href="#setup">below</a>).
+  У них має бути встановлено декілька спеціальних програмних пакетів (перелічених  <a href="#setup">тут</a>).
 </p>
 
 {% comment %}
@@ -212,7 +212,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 <p id="accessibility">
   <strong>Доступність:</strong>
 {% if online == "false" %}
-  Ми прагнемо зробити цей семінар зручним для всіх. Для семінарів у фізичному місці організатори семінарів переконалися, що:
+  Ми прагнемо зробити цей семінар зручним для всіх. Для семінарів у фізичному місці організатори переконалися, що:
 </p>
 <ul>
   <li>Приміщення пристосоване для інвалідних візків/самокатів.</li>
@@ -254,7 +254,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
   {% else %}
   to-be-announced
   {% endif %}
-  for more information.
+  для подальшої інформації.
 </p>
 
 <p id="roles">
@@ -390,7 +390,7 @@ https://pad.carpentries.org/YYYY-MM-DD-site
 Це ще одне місце, де люди часто роблять помилки, тому, будь ласка, перегляньте свій сайт перед тим, як зробити фіксацію, і переконайтеся, що ви також запустили 'інструменти/перевірку'.
 {% endcomment %}
 
-<h2 id="setup">Setup</h2>
+<h2 id="setup">Налаштування</h2>
 
 <p>
   Для участі в
@@ -406,8 +406,8 @@ https://pad.carpentries.org/YYYY-MM-DD-site
   Крім того, вам знадобиться сучасний веб-браузер.
 </p>
 <p>
-  Ми ведемо список типових проблем, які виникають під час встановлення, як довідник для інструкторів, який може бути корисним на
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">вікі-сторінці Проблеми конфігурації та рішення</a>.
+  Ми ведемо список типових проблем, які виникають під час встановлення, як довідник для інструкторів, який може бути корисним на вікі-сторінці 
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Проблеми конфігурації та рішення</a>.
 </p>
 
 {% comment %}

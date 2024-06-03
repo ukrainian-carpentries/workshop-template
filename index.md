@@ -60,7 +60,7 @@ Check DC curriculum
 {% if site.carpentry == "dc" %}
 {% unless site.curriculum == "dc-astronomy" or site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-geospatial" or site.curriculum == "dc-image" or site.curriculum == "dc-socsci" %}
 <div class="alert alert-warning">
-Здається, що ви налаштовуєте веб-сайт для навчальної програми Data Carpentry, але ви не вказали тип навчальної програми у файлі <code>_config.yml</code> (поточне значення у <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", можливі значення: <code>dc-image</code>, <code>dc-astronomy</code>, <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). Після редагування цього файлу вам потрібно знову запустити <code>make serve</code>, щоб побачити відображені зміни.
+Здається, що ви налаштовуєте вебсайт для навчальної програми Data Carpentry, але ви не вказали тип навчальної програми у файлі <code>_config.yml</code> (поточне значення у <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", можливі значення: <code>dc-image</code>, <code>dc-astronomy</code>, <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). Після редагування цього файлу вам потрібно знову запустити <code>make serve</code>, щоб побачити результат цих змін.
 </div>
 {% endunless %}
 {% endif %}
@@ -72,7 +72,7 @@ Check DC curriculum
 {% if site.carpentry == "swc" %}
 {% unless site.curriculum == "swc-inflammation" or site.curriculum == "swc-gapminder" %}
 <div class="alert alert-warning">
-Здається, що ви налаштовуєте вебсайт для навчального плану Software Carpentry, але не вказали його тип у файлі <code>_config.yml</code> (поточне значення у <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, або <code>swc-gapminder</code>). Після редагування цього файлу вам потрібно знову запустити <code>make serve</code>, щоб побачити відобразити зміни.
+Здається, що ви налаштовуєте вебсайт для навчального плану Software Carpentry, але не вказали його тип у файлі <code>_config.yml</code> (поточне значення у <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, або <code>swc-gapminder</code>). Після редагування цього файлу вам потрібно знову запустити <code>make serve</code>, щоб побачити результат цих змін.
 </div>
 {% endunless %}
 {% endif %}

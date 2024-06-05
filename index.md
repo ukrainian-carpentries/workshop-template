@@ -41,7 +41,7 @@ For a workshop please delete the following block until the next dashed-line
 <div class="alert alert-danger">
 Це шаблон для сторінки семінару. Видаліть ці рядки та використайте його для налаштування свого семінару (інструкція англійською знаходиться
 <a href="https://carpentries.github.io/workshop-template/customization/index.html">тут</a>).
-Якщо ви ще не відправили запит на семінар або ведете його самостійно, будь ласка заповніть цю
+Якщо ви ще не відправили запит на семінар або ведете його самостійно, будь ласка, заповніть цю
 <a href="{{site.amy_site}}/forms/self-organised/">форму</a>,
 щоб повідомити нас про ваш семінар. Ми зв'яжемось з вами, якщо нам знадобиться додаткова інформація.
 Якщо це перший семінар для нового уроку, вкажіть значення `true` в полі `pilot` у файлі `_config.yml`.
@@ -60,7 +60,7 @@ Check DC curriculum
 {% if site.carpentry == "dc" %}
 {% unless site.curriculum == "dc-astronomy" or site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-geospatial" or site.curriculum == "dc-image" or site.curriculum == "dc-socsci" %}
 <div class="alert alert-warning">
-Схоже, що ви налаштовуєте веб-сайт для навчальної програми Data Carpentry, але ви не вказали тип навчальної програми у файлі <code>_config.yml</code> (поточне значення у <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", можливі значення: <code>dc-image</code>, <code>dc-astronomy</code>, <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). Після редагування цього файлу вам потрібно знову запустити <code>make serve</code> , щоб побачити відображені зміни.
+Здається, що ви налаштовуєте веб-сайт для навчальної програми Data Carpentry, але ви не вказали тип навчальної програми у файлі <code>_config.yml</code> (поточне значення у <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", можливі значення: <code>dc-image</code>, <code>dc-astronomy</code>, <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). Після редагування цього файлу вам потрібно знову запустити <code>make serve</code>, щоб побачити відображені зміни.
 </div>
 {% endunless %}
 {% endif %}
@@ -72,7 +72,7 @@ Check DC curriculum
 {% if site.carpentry == "swc" %}
 {% unless site.curriculum == "swc-inflammation" or site.curriculum == "swc-gapminder" %}
 <div class="alert alert-warning">
-Схоже, ви налаштовуєте веб-сайт для навчального плану Software Carpentry, але не вказали його тип у файлі <code>_config.yml</code> (поточне значення у <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, або <code>swc-gapminder</code>). Після редагування цього файлу вам потрібно знову запустити <code>make serve</code>, щоб побачити відображені зміни.
+Здається, що ви налаштовуєте вебсайт для навчального плану Software Carpentry, але не вказали його тип у файлі <code>_config.yml</code> (поточне значення у <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, або <code>swc-gapminder</code>). Після редагування цього файлу вам потрібно знову запустити <code>make serve</code>, щоб побачити відобразити зміни.
 </div>
 {% endunless %}
 {% endif %}
@@ -103,7 +103,7 @@ EVENTBRITE
 {% endcomment %}
 
 <p>
-Проект <strong><a href="https://carpentries.org">Carpentries</a></strong> містить в собі <a
+Проєкт <strong><a href="https://carpentries.org">Carpentries</a></strong> складається з <a
 href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, та
 <a href="{{site.lc_site}}">Library Carpentry</a> спільноти інструкторів, тренерів, супроводжувачів, помічників і прихильників. Вони мають спільну місію — навчати науковців базовим навичкам досліджень за допомогою обчислювальних методів.
 <p align="center">
@@ -155,7 +155,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 <p id="where">
   <strong>Де:</strong>
   {{page.address}}.
-  Отримати напрямок за допомогою
+  Пошук шляху за допомогою
   <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
   або
   <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
@@ -213,8 +213,8 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
   організатори переконалися, що:
 </p>
 <ul>
-  <li>Приміщення пристосоване для інвалідних візків/самокатів.</li>
-  <li>Є доступні вбиральні.</li>
+  <li>приміщення пристосоване для інвалідних візків/самокатів.</li>
+  <li>наявні вбиральні.</li>
 </ul>
 <p>
   Матеріали будуть надані до початку семінару. Також нотатки з великим шрифтом будуть доступні за потреби, якщо ви заздалегідь попередите про це організаторів. Якщо ми можемо допомогти вам полегшити навчання (наприклад, надати сурдоперекладача або приміщення для лактації), будь ласка, зв'яжіться з нами (використовуючи контактні дані нижче), і ми спробуємо задовольнити вашу потребу.
@@ -255,7 +255,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 
 <p id="roles">
   <strong>Ролі:</strong>
-  Щоб дізнатися більше про ролі на семінарі (хто що робитиме), зверніться до Workshop FAQ<a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop"> </a>.
+  Щоб дізнатися більше про ролі на семінарі (що ви маєте робити), зверніться до Workshop FAQ<a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop"> </a>.
 </p>
 
 {% comment %}
@@ -285,7 +285,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 <h2 id="code-of-conduct">Кодекс поведінки</h2>
 
 <p>
-Кожен, хто бере участь у діяльності Carpentries, зобов'язаний дотримуватися <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Кодексу поведінки</a>. У цьому документі також описано, як повідомити про інцидент, якщо це необхідно.
+Кожен, хто бере участь у діяльності Carpentries, зобов'язаний дотримуватися <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Кодексу поведінки</a>. У цьому документі також зазначено, як повідомити про інцидент, якщо це необхідно.
 </p>
 
 <p class="text-center">
@@ -396,12 +396,12 @@ https://pad.carpentries.org/YYYY-MM-DD-site
   Data Carpentry
   {% elsif site.carpentry == "lc" %}
   Library Carpentry
-  {% endif %}
-  ,вам знадобиться доступ до програмного забезпечення, як описано нижче.
-  Крім того, вам знадобиться сучасний веб-браузер.
+  {% endif %},
+  вам знадобиться доступ до програмного забезпечення, яке наведено нижче.
+  Крім того, вам знадобиться сучасний веббраузер.
 </p>
 <p>
-  Ми ведемо список типових проблем, які виникають під час встановлення, як довідник для інструкторів. Він може вам знадобитися на вікі-сторінці 
+  Ми зберігаємо список типових проблем, які виникають під час встановлення, як довідник для інструкторів. Він може вам знадобитися на вікі-сторінці 
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Проблеми конфігурації та рішення</a>.
 </p>
 

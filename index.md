@@ -180,7 +180,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
-  <strong>Де:</strong>
+  <strong>Коли:</strong>
   {{page.humandate}}.
   {% include workshop_calendar.html %}
 </p>
@@ -221,10 +221,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 </p>
 {% else %}
   Ми прагнемо створити позитивне та доступне навчальне середовище для всіх.
-  Ми не вимагаємо від учасників надавати документи про інвалідність або розкривати будь-яку особисту інформацію, яку ми не потребуємо. Однак ми хочемо допомогти створити інклюзивний, доступний досвід для всіх учасників. Ми заохочуємо вас поділитися будь-якою інформацією, яка може бути корисною для того, щоб зробити ваш досвід в Carpentries більш доступним. Щоб запросити житло для цього семінару, будь ласка, заповніть 
-  <a href="https://carpentries.typeform.com/to/B2OSYaD0">форму запиту на проживання</a>. 
-  Якщо у вас є запитання або вам потрібна допомога з реєстрацією на житло, 
-  <a href="mailto:team@carpentries.org">напишіть нам електронною поштою</a>.
+  Ми не вимагаємо від учасників розкривати будь-яку особисту інформацію, яку ми не потребуємо. Однак ми хочемо допомогти створити інклюзивний, доступний досвід для всіх учасників. Щоб повідомити будь-яку інформацію, яка може бути корисною для того, щоб зробити ваш досвід в Carpentries більш доступним, <a href="mailto:team@carpentries.org">напишіть нам електронною поштою</a>.
 </p>
 {% endif %}
 
@@ -255,7 +252,8 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 
 <p id="roles">
   <strong>Ролі:</strong>
-  Щоб дізнатися більше про ролі учасників семінару (інструктор, помічник, організатор, слухач), зверніться до Workshop FAQ<a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop"> </a>.
+  Щоб дізнатися більше про ролі учасників семінару (інструктор, помічник, організатор, слухач), зверніться 
+  до <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">Workshop FAQ</a>.
 </p>
 
 {% comment %}
@@ -403,6 +401,10 @@ https://pad.carpentries.org/YYYY-MM-DD-site
 <p>
   Ми склали список типових проблем, які виникають під час встановлення програмного забезпечення, як довідник для інструкторів. Він може вам знадобитися на вікі-сторінці 
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Проблеми конфігурації та рішення</a>.
+</p>
+<p>
+  Окрім того, ви можете скористуватися новішіми версіями інструкцій з налаштування (наприклад, з використанням Windows Subsystem for Linux v2 у сучасних версіях Windows), які знаходяться у 
+  <a href="https://carpentries.github.io/workshop-template/#setup">англійськомовній версії шаблону сторінки семінару The Carpentries</a>.
 </p>
 
 {% comment %}
